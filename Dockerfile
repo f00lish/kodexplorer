@@ -25,8 +25,8 @@ COPY entrypoint.sh /usr/local/bin/
 
 RUN chmod 777 /usr/local/bin/entrypoint.sh
 
-EXPOSE 80
+EXPOSE 8015
 
 ENTRYPOINT ["entrypoint.sh"]
-CMD [ "php", "-S", "0000:80", "-t", "/var/www/html" ]
+CMD [ "php", "-S", "0000:8015", "-t", "/var/www/html" ]
 
